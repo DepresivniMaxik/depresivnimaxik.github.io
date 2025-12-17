@@ -107,3 +107,10 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #555;
 }
+
+h6.footer {
+  color: #888;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
