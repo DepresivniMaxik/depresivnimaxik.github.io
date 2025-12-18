@@ -4,7 +4,7 @@ function checkCode() {
     const error = document.getElementById("errorMsg");
   
     if (input === correctCode) {
-      window.location.href = "index.html";
+      window.location.href = "confession/index.html";
     } else {
       error.style.display = "block";
     }
