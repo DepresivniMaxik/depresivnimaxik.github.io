@@ -28,6 +28,12 @@ h2 {
   font-size: 18px;
   margin-top: 20px;
   text-align: center;
+  text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 h6 {
