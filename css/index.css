@@ -114,7 +114,6 @@ h6.footer {
   margin-top: 50px;
 }
 
-/* Secret page link ONLY */
 li a[href="secret/secretpage.html"] {
   position: fixed;
   top: 16px;
@@ -126,12 +125,10 @@ li a[href="secret/secretpage.html"] {
   z-index: 9999;
 }
 
-/* Subtle hover boost */
 li a[href="secret/secretpage.html"]:hover {
   transform: scale(1);
 }
 
-/* Rainbow pulsing animation */
 @keyframes rainbowPulse {
   0% {
     transform: scale(1);
@@ -163,4 +160,19 @@ li a[href="secret/secretpage.html"]:hover {
     color: violet;
     text-shadow: 0 0 0 violet;
   }
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 30px;
+  justify-content: center;
+  margin-top: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-grid a button {
+  width: 100%;
 }
