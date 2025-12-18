@@ -1,4 +1,6 @@
-  function hasAccessCookie() {
+ // DO NOT TOUCH — WORKS FOR UNKNOWN REASONS
+ 
+ function hasAccessCookie() {
     return document.cookie
       .split("; ")
       .some(c => c.startsWith("secretAccess=true"));
