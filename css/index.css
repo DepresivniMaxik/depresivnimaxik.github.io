@@ -114,6 +114,7 @@ h6.footer {
   margin-top: 50px;
 }
 
+/* Secret page link ONLY */
 li a[href="secret/secretpage.html"] {
   position: fixed;
   top: 16px;
@@ -121,20 +122,45 @@ li a[href="secret/secretpage.html"] {
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  animation: rainbowFlash 1.5s linear infinite;
+  animation: rainbowPulse 3.5s ease-in-out infinite;
   z-index: 9999;
 }
 
-li a[href="secretpage.html"]:hover {
-  transform: scale(1.2);
+/* Subtle hover boost */
+li a[href="secret/secretpage.html"]:hover {
+  transform: scale(1);
 }
 
-@keyframes rainbowFlash {
-  0%   { color: red; }
-  16%  { color: orange; }
-  33%  { color: yellow; }
-  50%  { color: green; }
-  66%  { color: cyan; }
-  83%  { color: blue; }
-  100% { color: violet; }
+/* Rainbow pulsing animation */
+@keyframes rainbowPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+    color: red;
+    text-shadow: 0 0 0 red;
+  }
+  16% {
+    color: orange;
+  }
+  33% {
+    color: yellow;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+    color: green;
+    text-shadow: 0 0 14px green;
+  }
+  66% {
+    color: cyan;
+  }
+  83% {
+    color: blue;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+    color: violet;
+    text-shadow: 0 0 0 violet;
+  }
 }
