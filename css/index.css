@@ -114,3 +114,27 @@ h6.footer {
   margin-top: 50px;
 }
 
+li a[href="secret/secretpage.html"] {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  animation: rainbowFlash 1.5s linear infinite;
+  z-index: 9999;
+}
+
+li a[href="secretpage.html"]:hover {
+  transform: scale(1.2);
+}
+
+@keyframes rainbowFlash {
+  0%   { color: red; }
+  16%  { color: orange; }
+  33%  { color: yellow; }
+  50%  { color: green; }
+  66%  { color: cyan; }
+  83%  { color: blue; }
+  100% { color: violet; }
+}
