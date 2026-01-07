@@ -28,6 +28,12 @@ h2 {
   font-size: 18px;
   margin-top: 20px;
   text-align: center;
+  text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 h6 {
@@ -114,7 +120,6 @@ h6.footer {
   margin-top: 50px;
 }
 
-/* Secret page link ONLY */
 li a[href="secret/secretpage.html"] {
   position: fixed;
   top: 16px;
@@ -126,12 +131,10 @@ li a[href="secret/secretpage.html"] {
   z-index: 9999;
 }
 
-/* Subtle hover boost */
 li a[href="secret/secretpage.html"]:hover {
   transform: scale(1);
 }
 
-/* Rainbow pulsing animation */
 @keyframes rainbowPulse {
   0% {
     transform: scale(1);
@@ -163,4 +166,59 @@ li a[href="secret/secretpage.html"]:hover {
     color: violet;
     text-shadow: 0 0 0 violet;
   }
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 30px;
+  justify-content: center;
+  margin-top: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-grid a button {
+  width: 100%;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.button-grid a button {
+  width: 100%;
+  opacity: 0;
+  animation: fadeInUp 3.5s forwards;
+}
+
+.discord-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeInUp 3.5s forwards;
+}
+
+.discord-button a button {
+  background-color: #5865F2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discord-button a button:hover {
+  background-color: #4752C4;
 }
