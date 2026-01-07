@@ -199,3 +199,26 @@ li a[href="secret/secretpage.html"]:hover {
   opacity: 0;
   animation: fadeInUp 3.5s forwards;
 }
+
+.discord-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeInUp 3.5s forwards;
+}
+
+.discord-button a button {
+  background-color: #5865F2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discord-button a button:hover {
+  background-color: #4752C4;
+}
